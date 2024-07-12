@@ -1,0 +1,587 @@
+
+/* body starts here */
+*{
+
+margin: 0;
+padding: 0;
+}
+html{
+
+    scroll-behavior: smooth;
+}
+
+body{
+    color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font-family: 'Poppins', sans-serif;
+}
+
+/* body ends here */
+/* nav bar starts from here */
+nav {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(24, 38, 196);
+  
+}
+
+/* 
+.sticky
+{
+position: fixed;
+top: 0; 
+left: 0;
+width: 100%;
+} */
+
+nav ul{
+display: flex;
+justify-content: center;
+
+}
+
+nav ul li{
+
+    list-style: none ;
+    margin: 0 27px;
+}
+
+nav ul li a{
+
+    text-decoration: none ;
+    color: rgb(255, 255, 255);
+}
+
+nav ul li a:hover{
+
+    text-decoration: underline ;
+    font-size: 1.01rem;
+    color: rgb(133, 151, 255);
+}
+/* nav bar ends from here */
+
+/* header starts here */
+.right{
+
+font-size: 1.05rem;
+
+}
+.left{
+
+    font-size: 1.07rem;
+}
+/* header ends here */
+
+/* section starts here */
+
+.firstsection {
+    margin: 50px 0px 0px 0px ;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    
+}
+
+.firstsection .leftsection {
+    width: 30%;
+    margin: 151px 0;
+}
+
+.firstsection .rightsection {
+
+    width: 30%;
+
+}
+
+.rightsection img {
+    width: 90%;
+    margin: 10px 0px 0px 0px;
+}
+
+/* .rightsection div{
+   
+    margin: -30px 146px;
+    
+} */
+.blue{
+
+    color:rgb(51, 71, 255);
+}
+
+#element{
+
+    color: rgb(51, 71, 255);
+}
+
+
+/* about me section starts here */
+
+#about{
+    margin: 80px 0px 100px 0px;
+    
+}
+.row{
+
+display: flex;
+/* justify-content: space-between;
+flex-wrap: wrap; */
+}
+/* 
+#head_of_about{
+font-size: 50px;
+} */
+/* column 1 */
+.about-col-1{
+flex-basis: 35%;
+
+}
+
+.about-col-1 img {
+    margin: 0px 80px;
+    width: 70%;
+    padding: 5%;
+}
+/* column 2 */
+
+.about-col-2 {
+  
+    padding: 93px 0px 0px 50px;
+    flex-basis: 60%;
+    text-align: justify;
+}
+
+#pyo{
+
+margin: 20px 80px 30px 0px ;
+
+}
+.tab-titles{
+    display: flex;
+    margin:20px 40px;
+}
+    .tab-links{
+    margin-right: 50px; font-size: 18px; font-weight: 500; cursor: pointer;
+    position: relative;
+    }
+
+
+    .tab-links::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background: #ffffff;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        transition: 0.5s;
+        }
+
+        .tab-links.active-link::after{
+        
+        width: 50%;
+        }
+        .tab-contents ul li{
+            list-style: none;
+            margin: 10px 0;
+            }
+            
+            .tab-contents ul li span{
+
+            color: rgb(46, 126, 255);
+            font-size: 14px;
+            
+            }
+
+            .tab-contents{
+
+                display: none;
+            }
+
+            .tab-contents.active-tab{
+
+            display: block;
+            
+            }
+
+
+
+/* about me section ends here */
+
+
+/* services sections starts here */
+
+#services{
+
+padding: 30px 100px;
+}
+
+
+.services-list{ 
+    display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+grid-gap: 40px ; 
+margin-top:50px ;
+
+}
+
+
+.services-list div{ 
+    background-color: #262626;
+padding: 40px; 
+font-size: 13px; 
+font-weight: 300; 
+border-radius: 10px;
+transition: background 0.50s;
+ transition: transform 0.55s;
+}
+
+.services-list div i{ 
+    font-size: 50px; 
+    margin-bottom: 30px;
+
+}
+
+
+.services-list div h2{
+
+  
+    font-size: 30px;
+     /* font-weight: 500; */
+    margin-bottom: 15px;
+    
+}
+.services-list div a{
+    
+        text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+    }
+
+    .services-list div:hover{
+        background: rgb(24, 38, 196);
+        transform: translateY(-10px);
+    }
+
+/* services sections ends here */
+
+
+/* my work section starts here */
+
+
+    #portfolio{
+    
+        padding: 50px 0;
+    
+    }
+    #portfolio .container{
+
+padding: 0px  105px;
+
+    }
+    .work-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 40px;
+        margin: 50px 0px 50px 0px;
+    }
+
+    .work{
+    border-radius: 10px;
+     position: relative;
+      overflow: hidden;
+    }
+    .work img{
+    
+    width: 90%;
+    border-radius: 10px;
+    display: block;
+    transition:transform 0.5s;
+    
+}
+
+
+
+.layer{
+    width: 70%; 
+    height: 0;
+    background: 
+    linear-gradient(rgba(0,0,0,0.6),#2200ff);
+    border-radius: 10px;
+     position: absolute;
+    left: 0;
+    
+     bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+     justify-content: center; 
+     flex-direction: column;
+    padding: 0 40px 0px 40px;
+     text-align: center;
+     font-size: 14px;
+     transition: height 0.5s;
+
+}
+
+.layer h3{
+font-weight: 500;
+margin-bottom: 20px;
+}
+
+
+.layer a{
+
+margin-top: 20px;
+color:#0033ff;
+text-decoration: none;
+font-size: 18px;
+line-height: 60px;
+background:rgb(255,255,255);
+width: 60px;
+height: 60px;
+border-radius:50%;
+}
+/*                         img zoom hota hai isssey
+.work:hover img{
+
+    transform: scale(1.01);
+    
+    } */
+
+    .work:hover .layer{
+
+        height: 100%;
+        }
+
+
+
+/* see more button here */
+
+        .btn{
+            display: block;
+            margin: 50px auto; width: fit-content;
+            border: 1px solid rgb(24, 38, 196);
+            padding: 14px 50px;
+             border-radius: 6px;
+             text-decoration: none;
+            color:#ffffff;
+            transition: background 0.5s;
+            
+            }
+        
+         .btn:hover{
+            background:rgb(24, 38, 196);
+
+            }
+/* my work section ends here */
+
+
+
+/* contact me section start here */
+
+.contact-left{
+    flex-basis:50%;
+    }
+    
+    .contact-right{
+    flex-basis: 60%;
+    
+    }
+    .contact-left p{
+    margin-top: 30px;
+    }
+    
+    .contact-left p i{
+
+    color:#ffffff;
+    margin-right: 15px;
+    font-size: 25px;
+
+    }
+
+
+    .social-icons{
+    
+    margin-top:
+    30px;
+    
+    }
+    .social-icons a{
+    
+    text-decoration:none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #888686;
+    display: inline-block;
+    transition: transform 0.5s;
+    }
+    .social-icons a:hover{
+    color: #ffffff;
+    transform: translateY(-5px);
+    }
+
+    .btn.btn2{
+        display: inline-block;
+background-color: #0033ff;
+transition: transform 0.5s;
+    }
+
+
+    .btn.btn2:hover{
+        transform:translateY(-5px) ;
+    }
+
+    .contact-right form{
+        width: 100%;
+        }
+        
+    
+        form input,form textarea{
+        
+        
+        width: 100%;
+
+        border: 0;
+        
+ 
+        outline: none;
+        
+   
+        background: #262626;
+   
+        padding: 15px;
+        
+       
+        margin: 15px 0;
+        
+   
+        color:#fff;
+        
+      
+        font-size: 18px;
+        
+       
+        border-radius: 6px;
+
+
+
+        }
+
+        .row {
+            display: flex;
+            /* padding: 100px; */
+            margin: 50px 100px 130px 70px;
+        }
+
+
+        form .btn2{
+            padding: 14px 60px;
+            font-size: 18px;
+            margin-top: 20px;
+            cursor: pointer;
+
+        }
+
+
+
+/*------------ contact me section ends here------------- */
+
+
+
+/* ----------copyright section starts here------------ */
+
+#copyright{
+font-size: 18px;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+text-align:center;
+
+margin: 30px 0px;
+
+
+}
+
+
+
+
+
+
+
+/* ----------copyright section ends here------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------footer starts here ------------*/
+
+
+/* footer{
+background-color:rgb(24, 38, 196) ;
+    height: 180px;
+    padding: 0px;
+}
+.footer{
+  
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer ul{
+list-style: none;
+
+}
+.footer > div{
+width: 180px;
+margin: 20px 0px;
+}
+.first-footer{
+    padding: 10px 0;
+}
+
+.second-footer{
+    margin: 25px 0;
+    
+}
+.second-footer ul a li{
+    color: #ffffff;
+} */
+
+/*--------------- footer ends here------------------ */
+
+
+/* footer rights starts here */
+/* 
+footer .footer-rights{
+     height: 23px;
+    text-align: center;
+    background-color: rgb(39, 54, 222);
+    color: rgb(194, 200, 205);
+} */
+/* footer rights ends here */
